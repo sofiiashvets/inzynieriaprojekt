@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Introduction</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}">
+
+</head>
+
+<body>
+
+  <header></header>
+  <div class = "container">
+    <div></div>
+
+    <div class = "main">
+
+      <div class = "form">
+        <form action="/submit" method="post" enctype="multipart/form-data">
+            <label>Wybierz z listy department do którego <br> chcesz dodać pracownika:</label><br>
+
+            <div class="hehediv">
+                <select>
+                    <option value="1" selected>{{list[0].id}} {{list[0].name}}</option>
+                    <option value="2">{{list[1].id}} {{list[1].name}}</option>
+                    <option value="3">{{list[2].id}} {{list[2].name}}</option>
+                    <option value="3">{{list[3].id}} {{list[3].name}}</option>
+                    <option value="3">{{list[4].id}} {{list[4].name}}</option>
+                </select>
+            </div>
+               
+
+
+
+        </form>
+      </div>
+      
+    </div>
+
+    <div></div>
+
+  </div>
+
+
+
+</body>
+
+</html>
